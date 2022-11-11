@@ -1,0 +1,20 @@
+.home-container {
+  min-height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1638291792853-5ab967de3611?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80');
+  position: relative;
+}
+
+.home-title {
+  color: #333;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 40%;
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.startBtn {
+  max-width: 8rem;
+}
