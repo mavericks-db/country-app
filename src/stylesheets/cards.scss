@@ -1,0 +1,20 @@
+@import './animate.scss';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+}
+
+.arrow {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.flag {
+  max-width: 150px;
+  max-height: 150px;
+}

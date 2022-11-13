@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import '../stylesheets/navbar.scss';
 
 const Navbar = () => (
-  <nav className="navbar navbar-expand-lg bg-dark">
+  <nav className="navbar navbar-expand-lg">
     <div className="container-fluid">
       <NavLink to="/" className="nav-title">
         CountryApp

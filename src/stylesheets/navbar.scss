@@ -1,10 +1,14 @@
+nav {
+  background-color: #dedede;
+}
+
 .nav-title {
   text-decoration: none;
-  color: #fff;
+  color: #444;
   font-size: 1.5rem;
   font-weight: 700;
 
   &:hover {
-    color: #f2e7d5;
+    color: #000;
   }
 }

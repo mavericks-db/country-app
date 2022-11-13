@@ -18,3 +18,9 @@
 .startBtn {
   max-width: 8rem;
 }
+
+@media screen and (max-width: 768px) {
+  .home-title {
+    font-size: 4rem;
+  }
+}
