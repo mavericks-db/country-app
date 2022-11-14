@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+.details-container {
+  height: 100vh;
+  color: #111;
+}
+
+.details-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.details-stats {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: #111;
+  font-family: 'Roboto', sans-serif;
+  padding: 3rem;
+}
+
+.UN-member {
+  width: 75px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: black;
+}
+
+.flag,
+.coatOfArms {
+  max-width: 200px;
+  height: auto;
+  margin: 1rem;
+}
+
+.details-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 3rem;
+  padding: 1rem;
+}
