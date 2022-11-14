@@ -1,3 +1,32 @@
+![](https://img.shields.io/badge/React-lightblue)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/387261dd-52b5-4855-9a29-5f319d362fb5/deploy-status)](https://app.netlify.com/sites/app-country-app/deploys)
+
+![app-screenshot3](https://user-images.githubusercontent.com/98527559/201638175-a1a57fb1-ce7c-4114-8f66-88f3133d26a3.png)
+
+# CountryApp
+
+![app-screenshot](https://user-images.githubusercontent.com/98527559/201638058-4b4fdc6f-8bf9-4c22-a98c-82242a524d0c.png)
+
+## *React Project*
+
+> This project is to create a web application that displays every country in the world and consumes the [REST Countries API](https://restcountries.com/).
+
+## Built With 🛠️
+
+- [x] Languages: HTML, Sass and JavaScript
+- [x] Linters: Stylelint and ESLint
+- [x] Front-end library: React
+- [x] API: REST Countries
+- [x] Code Editor: VS Code
+
+## Screenshots 📸
+Screenshots can be found in the repository.
+
+## Live Demo 🔗
+
+Check the live demo [netlify](https://app-country-app.netlify.app/)👈
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -39,32 +68,34 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **Mavericks Balitaan** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-mavericks--db-white?logo=LinkedIn&logoColor=0A66C2&style=plastic)](https://www.linkedin.com/in/mavericks-db/)
 
-### Code Splitting
+- AngelList: [![AngelList Badge](https://img.shields.io/badge/-mavericks--db-white?logo=AngelList&logoColor=000000&style=plastic)](https://angel.co/u/mavericks-db)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- GitHub: [![GitHub Badge](https://img.shields.io/badge/-mavericks--db-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/mavericks-db)
 
-### Analyzing the Bundle Size
+- Twitter: [![Twitter Badge](https://img.shields.io/badge/-mavericks__db-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/mavericks_db)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Facebook: [![Facebook Badge](https://img.shields.io/badge/-mavericksdb-white?logo=Facebook&logoColor=1877F2&style=plastic)](https://www.facebook.com/mavericksdb/)
 
-### Making a Progressive Web App
+- Gmail: [![Gmail Badge](https://img.shields.io/badge/-balitaanmavericks-white?logo=Gmail&logoColor=EA4335&style=plastic)](mailto:balitaanmavericks@gmail.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🤝 Contributing
 
-### Advanced Configuration
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Feel free to check the [issues page](https://github.com/mavericks-db/space-travelers-hub/issues).
 
-### Deployment
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Give a ⭐️ if you like this project!
 
-### `npm run build` fails to minify
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
