@@ -86,7 +86,7 @@ function Details() {
                   ))}
               </h4>
               <h4>
-                Driving Side: &emsp;
+                Driving side: &emsp;
                 {arr[0].car.side}
               </h4>
             </div>
