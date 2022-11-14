@@ -6,7 +6,7 @@
 
 # CountryApp
 
-![app-screenshot](https://user-images.githubusercontent.com/98527559/201638058-4b4fdc6f-8bf9-4c22-a98c-82242a524d0c.png)
+![app-screenshot](https://user-images.githubusercontent.com/98527559/201697240-c3fe36f1-e189-4d50-9905-9048a9223d0d.png)
 
 ## *React Project*
 

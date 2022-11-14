@@ -3,6 +3,7 @@
 .details-container {
   height: 100vh;
   color: #111;
+  background-color: #111;
 }
 
 .details-wrapper {
@@ -10,12 +11,14 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  background-color: white;
 }
 
 .details-stats {
   color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   background-color: #111;
   font-family: 'Roboto', sans-serif;
   padding: 3rem;
@@ -26,7 +29,6 @@
   position: absolute;
   top: 2rem;
   right: 2rem;
-  color: black;
 }
 
 .flag,
@@ -36,10 +38,15 @@
   margin: 1rem;
 }
 
+.header3 {
+  background-color: white;
+}
+
 .details-header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 3rem;
   padding: 1rem;
+  background-color: white;
 }

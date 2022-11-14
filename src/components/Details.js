@@ -2,11 +2,14 @@ import '../stylesheets/details.scss';
 import { Link, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { nanoid } from 'nanoid';
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 function Details() {
   const params = useParams();
   const [arr, setArr] = useState(null);
   const [curr, setCurr] = useState(null);
+  const [lat, setLat] = useState(null);
+  const [lng, setLng] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
@@ -16,9 +19,23 @@ function Details() {
       const data = await response.json();
       setArr(data);
       setCurr(data[0].currencies);
+      setLat(data[0].latlng[0]);
+      setLng(data[0].latlng[1]);
     }
     fetchData();
   }, [params.country]);
+
+  const containerStyle = {
+    width: '250px',
+    height: '250px',
+  };
+
+  const ApiKey = process.env.REACT_APP_API_KEY;
+
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: ApiKey,
+  });
 
   return (
     <>
@@ -40,7 +57,7 @@ function Details() {
                 className="coatOfArms"
               />
             </div>
-            <h3 className="text-center">{arr[0].name.common}</h3>
+            <h3 className="text-center header3">{arr[0].name.common}</h3>
             <div className="details-stats">
               {arr[0].unMember && (
                 <div>
@@ -51,44 +68,57 @@ function Details() {
                   />
                 </div>
               )}
-              <h4>
-                Official Name: &emsp;
-                {arr[0].name.official}
-              </h4>
-              <h4>
-                Capital City: &emsp;
-                {arr[0].capital}
-              </h4>
-              <h4>
-                Currency: &emsp;
-                {Object.keys(curr)[0]}
-              </h4>
-              <h4>
-                Area: &emsp;
-                {arr[0].area.toLocaleString('en-US')}
-                {' '}
-                km
-                <sup>2</sup>
-              </h4>
-              <h4>
-                Population: &emsp;
-                {arr[0].population.toLocaleString('en-US')}
-              </h4>
-              <h4>
-                Timezones: &emsp;
-                {arr[0].timezones.length
-                  && arr[0].timezones.map((tmz) => (
-                    <span key={nanoid()}>
-                      {tmz}
-                      {' '}
+              <div>
+                <h4>
+                  Official Name: &emsp;
+                  {arr[0].name.official}
+                </h4>
+                <h4>
+                  Capital City: &emsp;
+                  {arr[0].capital}
+                </h4>
+                <h4>
+                  Currency: &emsp;
+                  {Object.keys(curr)[0]}
+                </h4>
+                <h4>
+                  Area: &emsp;
+                  {arr[0].area.toLocaleString('en-US')}
+                  {' '}
+                  km
+                  <sup>2</sup>
+                </h4>
+                <h4>
+                  Population: &emsp;
+                  {arr[0].population.toLocaleString('en-US')}
+                </h4>
+                <h4>
+                  Timezones: &emsp;
+                  {arr[0].timezones.length
+                    && arr[0].timezones.map((tmz) => (
+                      <span key={nanoid()}>
+                        {tmz}
+                        {' '}
 &emsp;
-                    </span>
-                  ))}
-              </h4>
-              <h4>
-                Driving side: &emsp;
-                {arr[0].car.side}
-              </h4>
+                      </span>
+                    ))}
+                </h4>
+                <h4>
+                  Driving side: &emsp;
+                  {arr[0].car.side}
+                </h4>
+              </div>
+              <div>
+                {isLoaded ? (
+                  <GoogleMap
+                    mapContainerStyle={containerStyle}
+                    center={{ lat, lng }}
+                    zoom={5}
+                  />
+                ) : (
+                  <h5>Loading map...</h5>
+                )}
+              </div>
             </div>
           </>
         ) : (
